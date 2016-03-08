@@ -15,12 +15,18 @@ namespace Waller
         public FormWaller()
         {
             InitializeComponent();
-            labelWallpaperPath.Text = WallpaperChanger.CreateFolder(); 
+            labelInstructions.Text = "1. Copy URL of wanted image (exaple: http://www.url.com/image.jpg) \r\n2. Paste the URL into textbox below \r\n3. Click Change.";
+            labelWallpaperPath.Text = "Wallpaper folder: \r\n" + WallpaperChanger.CreateFolder(); 
         }
 
         private void buttonChange_Click(object sender, EventArgs e)
         {
             WallpaperChanger change = new WallpaperChanger(textBoxURL.Text);
+        }
+
+        private void richTextBoxInstructions_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

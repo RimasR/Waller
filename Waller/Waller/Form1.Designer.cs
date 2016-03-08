@@ -32,6 +32,7 @@
             this.labelUrl = new System.Windows.Forms.Label();
             this.buttonChange = new System.Windows.Forms.Button();
             this.labelWallpaperPath = new System.Windows.Forms.Label();
+            this.labelInstructions = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxURL
@@ -68,11 +69,20 @@
             this.labelWallpaperPath.Size = new System.Drawing.Size(0, 13);
             this.labelWallpaperPath.TabIndex = 3;
             // 
+            // labelInstructions
+            // 
+            this.labelInstructions.AutoSize = true;
+            this.labelInstructions.Location = new System.Drawing.Point(12, 9);
+            this.labelInstructions.Name = "labelInstructions";
+            this.labelInstructions.Size = new System.Drawing.Size(0, 13);
+            this.labelInstructions.TabIndex = 4;
+            // 
             // FormWaller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(484, 261);
+            this.Controls.Add(this.labelInstructions);
             this.Controls.Add(this.labelWallpaperPath);
             this.Controls.Add(this.buttonChange);
             this.Controls.Add(this.labelUrl);
@@ -90,6 +100,7 @@
         private System.Windows.Forms.Label labelUrl;
         private System.Windows.Forms.Button buttonChange;
         private System.Windows.Forms.Label labelWallpaperPath;
+        private System.Windows.Forms.Label labelInstructions;
     }
 }
 
