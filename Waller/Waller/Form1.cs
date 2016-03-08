@@ -15,6 +15,7 @@ namespace Waller
         public FormWaller()
         {
             InitializeComponent();
+            labelWallpaperPath.Text = WallpaperChanger.CreateFolder(); 
         }
 
         private void buttonChange_Click(object sender, EventArgs e)

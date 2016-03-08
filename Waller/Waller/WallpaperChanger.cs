@@ -7,11 +7,20 @@ using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Waller
 {
     class WallpaperChanger
     {
+        public static string CreateFolder()
+        {
+            string walls = "\\Wallpapers";
+            string wallpaperPath = Application.StartupPath + "\\Wallpapers";
+            DirectoryInfo di = Directory.CreateDirectory(walls);
+            bool exist = Directory.Exists(wallpaperPath);
+            return wallpaperPath.ToString() + " " + exist;
+        }
 
         const int SPI_SETDESKWALLPAPER = 20;
         const int SPIF_UPDATEINIFILE = 0x01;
